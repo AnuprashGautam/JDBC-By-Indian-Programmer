@@ -5,7 +5,7 @@ public class DataUpdation {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
         String username = "root";
         String password = "haveaniceday";
-        String query = "DELETE from employees WHERE id=3;";
+        String query = "UPDATE employees SET job_title='Full Stack Developer', salary=70000 WHERE id=2;";
         Connection con = null;
         Statement stmt = null;
         int rowsAffected = 0;
@@ -26,9 +26,9 @@ public class DataUpdation {
             rowsAffected = stmt.executeUpdate(query);
 
             if (rowsAffected > 0) {
-                System.out.println("Insert successful. " + rowsAffected + " row(s) affected.");
+                System.out.println("Update successful. " + rowsAffected + " row(s) affected.");
             } else {
-                System.out.println("Insertion failed.");
+                System.out.println("Updation failed.");
             }
 
         } catch (SQLException e) {
