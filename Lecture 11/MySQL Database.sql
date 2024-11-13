@@ -1,0 +1,8 @@
+CREATE DATABASE mydatabase;
+USE mydatabase;
+
+CREATE TABLE image_table(
+image_id INT AUTO_INCREMENT PRIMARY KEY,
+image_data LONGBLOB NOT NULL,
+upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
