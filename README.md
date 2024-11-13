@@ -15,5 +15,5 @@ This repository contains summarized notes and code examples from the [JDBC YouTu
 Clone the repository to explore the notes and run code files:
 
 ```bash
-git clone https://github.com/AnuprashGautam/JDBC-Learning-Repo.git
+git clone https://github.com/AnuprashGautam/JDBC-By-Indian-Programmer.git
 ```
